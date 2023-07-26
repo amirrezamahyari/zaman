@@ -23,6 +23,7 @@ export const useTimePicker = ({ defaultValue, clockTime, timeConvention, onChang
 
   const handleChangeMinute = (e: React.MouseEvent | React.TouchEvent) => {
     const { value } = getAngelValues(e, 6)
+    console.log({ handleChangeMinute: value })
     setMinute(value)
   }
   const handleChangeHour = (e: React.MouseEvent | React.TouchEvent) => {
